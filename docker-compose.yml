@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   api:
     build: ./hotel-api
@@ -9,7 +9,7 @@ services:
   client:
     build: ./hotel-client
     ports:
-      - "80:3000"
+      - "3000:3000"
     depends_on:
       - api
   mongodb:
