@@ -25,6 +25,11 @@ services:
     container_name: database
     networks:
       - comwell
+    volumes:
+      - dbdata:/data/db
 
 networks:
   comwell:
+
+volumes:
+  dbdata:
