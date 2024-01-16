@@ -4,6 +4,7 @@ services:
     build: ./hotel-api
     ports:
       - "4200:4200"
+    command: ["--api-cors-header=http://client"]
     depends_on:
       - mongodb
     container_name: api
